@@ -31,3 +31,27 @@
     transform: rotate(360deg);
   }
 }
+
+.AppStyle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.AppStyle input {
+  margin: 1px 10px 0 0 ;
+}
+
+.AppStyle p, input {
+  cursor: pointer;
+}
+
+.positionBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+}
