@@ -1,39 +1,48 @@
+
 import React, { Component } from 'react';
 import './App.css';
+import TodoItem from './components/TodoItem'
 
-  function MyApp(props) {
-    return(
-      <div className='AppStyle'>
-        <div className='positionBox'>
-          <input type='checkbox'/>
-          <p>Text here</p>
-        </div>
+  // function MyApp(props) {
+  //   return(
+  //     <div className='AppStyle'>
+  //       <div className='positionBox'>
+  //         <input type='checkbox'/>
+  //         <p>Text here</p>
+  //       </div>
+  //
+  //       <div className='positionBox'>
+  //         <input type='checkbox'/>
+  //         <p>Text here</p>
+  //       </div>                               // Old versio
+  //
+  //       <div className='positionBox'>
+  //         <input type='checkbox'/>
+  //         <p>Text here</p>
+  //       </div>
+  //
+  //       <div className='positionBox'>
+  //         <input type='checkbox'/>
+  //         <p>Text here</p>
+  //       </div>
+  //
+  //     </div>
+  //
+  //   )
+  // }
 
-        <div className='positionBox'>
-          <input type='checkbox'/>
-          <p>Text here</p>
-        </div>
 
-        <div className='positionBox'>
-          <input type='checkbox'/>
-          <p>Text here</p>
-        </div>
+    function MyApp() {
+        return(
+            <div>
+                <TodoItem/>
+                <TodoItem/>
+                <TodoItem/>
+                <TodoItem/>
+            </div>
+        )
+    }
 
-        <div className='positionBox'>
-          <input type='checkbox'/>
-          <p>Text here</p>
-        </div>
-
-      </div>
-    )
-  }
-
-
-  const style = {
-    fontWeight: 'bold',
-    fontSize: 20px,
-    display: 'flex'
-  }
 
 
   export default MyApp
